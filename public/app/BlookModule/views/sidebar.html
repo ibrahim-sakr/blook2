@@ -1,0 +1,107 @@
+<ul class="root-sidebar">
+    <li>
+        <a routerLink="/" routerLinkActive="active">
+            <i class="box blook-dashboard"></i>
+            <span>Dashboard</span>
+            <i class="blook-arrowright"></i>
+        </a>
+    </li>
+    <li>
+        <a routerLink="/geo" routerLinkActive="active">
+            <i class="box blook-map"></i>
+            <span>Geo Navigation</span>
+            <i class="blook-arrowright"></i>
+        </a>
+    </li>
+    <li class="active">
+        <a href="#">
+            <i class="box blook-my_location"></i>
+            <span>Locations</span>
+            <i class="blook-arrowright"></i>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#">
+                    Regions
+                    <i class="blook-arrowright"></i>
+                </a>
+                <ul>
+                    <li><a routerLink="/regions" routerLinkActive="active">Show All</a></li>
+                    <li><a routerLink="/regions/create" routerLinkActive="active">Add New</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    Places
+                    <i class="blook-arrowright"></i>
+                </a>
+                <ul>
+                    <li><a routerLink="/places" routerLinkActive="active">Show All</a></li>
+                    <li><a routerLink="/places/create" routerLinkActive="active">Add New</a></li>
+                    <li><a routerLink="/categories/place" routerLinkActive="active">Categories</a></li>
+                </ul>
+            </li>
+            <li>
+                <a routerLink="/categories/incident" routerLinkActive="active">Incidents Categories</a>
+            <li>
+                <a routerLink="/categories/violation" routerLinkActive="active">Violations Categories</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">
+            <i class="box blook-person_add"></i>
+            <span>Terminals</span>
+            <i class="blook-arrowright"></i>
+        </a>
+        <ul class="sub-menu">
+            <li><a routerLink="/terminal" routerLinkActive="active">Show All</a></li>
+            <li><a routerLink="/terminal/new" routerLinkActive="active">Add New</a></li>
+            <li><a routerLink="/categories/terminal" routerLinkActive="active">Groups</a></li>
+        </ul>
+    </li>
+    <li>
+        <a routerLink="/attendence" routerLinkActive="active">
+            <i class="box blook-edit_location"></i>
+            <span>Attendance</span>
+            <i class="blook-arrowright"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="box blook-format_list_numbered"></i>
+            <span>To-Do Lists</span>
+            <i class="blook-arrowright"></i>
+        </a>
+        <ul class="sub-menu">
+            <li><a routerLink="/todolists" routerLinkActive="active">Show All</a></li>
+            <li><a routerLink="/todolists/new" routerLinkActive="active">Add New</a></li>
+        </ul>
+    </li>
+
+    <li class="has-sub">
+        <a href="#">
+            <i class="box blook-visibility_off"></i>
+            <span>Privileges</span>
+            <i class="blook-arrowright"></i>
+        </a>
+        <ul class="sub-menu">
+            <li><a routerLink="/settings/positions" routerLinkActive="active">All Positions</a></li>
+            <li><a routerLink="/settings/positions/new" routerLinkActive="active">New Position</a></li>
+        </ul>
+    </li>
+    <li>
+        <a routerLink="/trash" routerLinkActive="active">
+            <i class="box blook-trash"></i>
+            <span>Trash</span>
+            <i class="blook-arrowright"></i>
+        </a>
+    </li>
+    <li>
+        <a routerLink="/help" routerLinkActive="active">
+            <i class="box blook-help"></i>
+            <span>Help</span>
+            <i class="blook-arrowright"></i>
+        </a>
+    </li>
+</ul>

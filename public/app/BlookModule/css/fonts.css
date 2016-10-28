@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'blookIcons';
+    src:url('app/BlookModule/fonts/blook.eot?kiu5wg');
+    src:url('app/BlookModule/fonts/blook.eot?kiu5wg#iefix') format('embedded-opentype'),
+        url('app/BlookModule/fonts/blook.ttf?kiu5wg') format('truetype'),
+        url('app/BlookModule/fonts/blook.woff?kiu5wg') format('woff'),
+        url('app/BlookModule/fonts/blook.svg?kiu5wg#blook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blookIcons';
+    src:url('app/BlookModule/fonts/OpenSans-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blookBoldItalic';
+    src:url('app/BlookModule/fonts/OpenSans-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blookExtraBold';
+    src:url('app/BlookModule/fonts/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blookExtraBoldItalic';
+    src:url('app/BlookModule/fonts/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blookItalic';
+    src:url('app/BlookModule/fonts/OpenSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blookLight';
+    src:url('app/BlookModule/fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blookLightItalic';
+    src:url('app/BlookModule/fonts/OpenSans-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blookRegular';
+    src:url('app/BlookModule/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blookSemibold';
+    src:url('app/BlookModule/fonts/OpenSans-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blookSemiboldItalic';
+    src:url('app/BlookModule/fonts/OpenSans-SemiboldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="blook-"], [class*=" blook-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'blookIcons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.blook-logout:before {
+  content: "\e2a9";
+}
+.blook-message:before {
+  content: "\e600";
+}
+.blook-map:before {
+  content: "\e603";
+}
+.blook-arrowright:before {
+  content: "\e605";
+}
+.blook-close:before {
+  content: "\e606";
+}
+.blook-arrowdown:before {
+  content: "\e608";
+}
+.blook-menu:before {
+  content: "\e609";
+}
+.blook-dashboard:before {
+  content: "\e60d";
+}
+.blook-trash:before {
+  content: "\e60e";
+}
+.blook-help:before {
+  content: "\e60f";
+}
+.blook-settings:before {
+  content: "\e612";
+}
+.blook-edit_location:before {
+  content: "\e568";
+}
+.blook-format_list_numbered:before {
+  content: "\e242";
+}
+.blook-my_location:before {
+  content: "\e55c";
+}
+.blook-keyboard_hide:before {
+  content: "\e31a";
+}
+.blook-language:before {
+  content: "\e894";
+}
+.blook-person_add:before {
+  content: "\e7fe";
+}
+.blook-visibility_off:before {
+  content: "\e8f5";
+}
+.blook-zoom_out_map:before {
+  content: "\e56b";
+}
+

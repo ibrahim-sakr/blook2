@@ -1,0 +1,44 @@
+<html>
+<head>
+    <base href="/">
+    <title>Blook</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function(err){ console.error(err); });
+    </script>
+</head>
+<!-- 3. Display the application -->
+<body>
+    <blook-app>
+        <style>
+            blook-app               { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background:#222; z-index: 99999; }
+            #loading-page-container { margin: 70px auto; width: 400px; }
+            #loading-page-h1        { color:#4a8df8; font-family: 'Raleway', cursive; font-weight:100; font-stretch:normal; font-size:1.5em; text-align: center; }
+            #loading-page-slider    { position:absolute; width:400px; height:2px; margin-top:15px; }
+            #loading-page-line      { position:absolute; background:#4a8df8; width:400px; height:2px; }
+            .loading-page-break     { position:absolute; background:#222; width:6px; height:2px; }
+            .loading-page-dot1      { -webkit-animation: loading 2s infinite; animation: loading 2s infinite;}
+            .loading-page-dot2      { -webkit-animation: loading 2s 0.5s infinite; animation: loading 2s 0.5s infinite; }
+            .loading-page-dot3      { -webkit-animation: loading 2s 1s infinite; animation: loading 2s 1s infinite; }
+            @-webkit-keyframes "loading" { from { left: 0; } to { left: 400px; } }
+            @keyframes "loading" { from { left: 0; } to { left: 400px; } }
+        </style>
+        
+        <div id="loading-page-container">
+            <h1 id="loading-page-h1">Loading ... Please Wait</h1>
+            <div id="loading-page-slider">
+                <div id="loading-page-line"></div>
+                <div class="loading-page-break loading-page-dot1"></div>
+                <div class="loading-page-break loading-page-dot2"></div>
+                <div class="loading-page-break loading-page-dot3"></div>
+            </div>
+        </div>
+    </blook-app>
+</body>
+</html>

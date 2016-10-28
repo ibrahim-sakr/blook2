@@ -1,0 +1,83 @@
+/**
+ * Sidebar
+ */
+:host {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    width: 210px;
+    max-width: 210px;
+    min-width: 210px;
+    background: #f9f9f9;
+    overflow-y: auto;
+    border-right: 1px solid #eeeeee;
+}
+:host > ul {
+}
+li {
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+li a {
+    color: #aaaaaa;
+    display: block;
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid #eeeeee;
+    padding: 13px 15px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+.root-sidebar > li > a {
+    padding: 20px 15px;
+}
+.sub-menu > li > a {
+    padding: 16px 15px;
+}
+li .box {
+    background: #f9f9f9;
+    text-align: center;
+    line-height: 53px;
+    margin: -20px 10px -20px -15px;
+    width: 53px;
+    height: 53px;
+    display: block;
+    float: left;
+    color: #444444;
+    font-size: 1.2em;
+}
+li i.blook-arrowright {
+    float: right;
+}
+li ul {
+    background: rgba(255,255,255, 0.04);
+}
+li ul li a {
+    padding-left: 30px;
+}
+li ul li ul li a {
+    padding-left: 45px;
+}
+
+li:hover,
+li:active,
+li.active {
+    background: #f4f4f4;
+}
+li:hover > a,
+li:active > a,
+li.active > a {
+    color: #888888;
+    font-family: 'blookSemibold';
+}
+li:hover .box,
+li:active .box,
+li.active .box {
+    background: #5fc6cf;
+    color: #fff;
+}
+

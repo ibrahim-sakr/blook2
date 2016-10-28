@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Blook
+        //- link(rel="stylesheet", href="../../public/css/signin.css")
+        style body,html{margin:0;padding:0;line-height:1em;background:#eee;}body,body *,html{box-sizing:border-box;}.errors{width:250px;padding:15px;background:#f2dede;color:#a94442;border:1px solid #ebccd1;border-radius:3px;margin:30px auto 0 auto;}.errors ul{margin:0;padding:0;list-style:none;}.errors .sub{margin:5px 0 5px 10px;}.errors .sub li{line-height:1.3em;}.errors h5{margin:0;padding:0;}.container{background:#fff;box-shadow:0px 2px 5px rgba(0,0,0, 0.4);width:250px;margin:50px auto 0 auto;padding:25px 15px;border-radius:5px;}.logo{margin:0 0 20px 0;text-align:center;padding:0 0 10px 0;border-bottom:1px solid #ccc;}.logo img{max-width:100px;height:auto;margin:0 0 10px 0;}.logo span{display:block;font-size:1.1em;color:#aaa;}form{margin:0 0 15px 0;}form label{display:block;color:#14A3FB;}form .text input{width:100%;display:block;margin:5px 0 15px 0;padding:10px;border-radius:3px;border:1px solid #14A3FB;outline:none;}form .checkbox input{margin:0 0 20px 0;}form button{background:#14A3FB;padding:10px;width:100%;color:#fff;text-transform:uppercase;border:0;border-radius:3px;font-weight:bold;outline:none;cursor:pointer;-webkit-transition:all 0.2s;transition:all 0.2s;}form button:hover{background:#32B0FD;box-shadow:2px 2px 2px rgba(0,0,0, 0.2);}form button:active{background:#0990E2;box-shadow:2px 2px 2px rgba(0,0,0, 0.4);}a{width:100%;display:block;text-align:center;text-decoration:none;color:#aaa;}a:active,a:hover{color:#333;text-decoration:underline;}
+    body
+        if errs
+            .errors
+                ul
+                    each err, name in errs
+                        li
+                            h5 #{name}
+                            ul.sub
+                                each er in err
+                                    li= er
+        .container
+            .logo
+                img(src="../../../images/logo.png", alt="logo")
+                span please sign in from here
+            form(action="", method="post")
+                label.text
+                    | Mobile
+                    input(type="num", name="mobile", placeholder="mobile", value="#{ mobile ? mobile : '' }")
+                label.text
+                    | Password
+                    input(type="password", name="password", placeholder="password")
+                label.checkbox
+                    input(type="checkbox", name="remember")
+                    | remember me
+                button(type="submit") Sign In
+            a(href="#") forget password

@@ -1,0 +1,56 @@
+{
+  "name": "Blook",
+  "version": "2.0.0",
+  "description": "blook with nodeJS technology and mongoDB",
+  "main": "./server/App.js",
+  "scripts": {
+    "production:css": "dist --file ./public/main.html --css",
+    "production:js" : "dist --file ./public/main.html --javascript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibrahimsaqr/blook2"
+  },
+  "authors": [
+    {
+      "name": "brilliancetech",
+      "url": "http://www.brilliancetech.net"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ibrahimsaqr/blook2/blob/master/LICENSE"
+    }
+  ],
+  "homepage": "https://github.com/ibrahimsaqr/blook2#readme",
+  "dependencies": {
+    "bcryptjs": "latest",
+    "body-parser": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "jsonwebtoken": "latest",
+    "moment": "latest",
+    "mongodb": "latest",
+    "node-cache": "latest",
+    "pmx": "latest",
+    "serve-favicon": "latest",
+    "terraformer": "latest",
+    "terraformer-wkt-parser": "latest",
+    "uglify-js": "latest"
+  },
+  "devDependencies": {
+    "clean-css": "latest",
+    "frisby": "latest",
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "jasmine": "latest",
+    "jasmine-expect": "latest",
+    "jasmine-node": "latest",
+    "morgan": "latest",
+    "response-time": "latest",
+    "uglify": "latest"
+  }
+}

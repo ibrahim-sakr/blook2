@@ -1,0 +1,45 @@
+{
+  "name": "BlookFrontend",
+  "version": "2.0.0",
+  "description": "blook with nodeJS technology and mongoDB",
+  "scripts": {
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "reset": "find ./app -type f -iname \\*.js -delete | find ./app -type f -iname \\*.map -delete"
+  },
+  "authors": [
+    {
+      "name": "brilliancetech",
+      "url": "http://www.brilliancetech.net"
+    }
+  ],
+  "homepage": "https://github.com/ibrahimsaqr/blook2#readme",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ibrahimsaqr/blook2/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "@angular/common": "latest",
+    "@angular/compiler": "latest",
+    "@angular/core": "latest",
+    "@angular/forms": "latest",
+    "@angular/http": "latest",
+    "@angular/platform-browser": "latest",
+    "@angular/platform-browser-dynamic": "latest",
+    "@angular/router": "latest",
+    "@angular/upgrade": "latest",
+    "core-js": "latest",
+    "reflect-metadata": "latest",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "latest",
+    "zone.js": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "typings":"latest"
+  }
+
+}

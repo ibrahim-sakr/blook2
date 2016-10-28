@@ -1,0 +1,6 @@
+REOSURCES/
+seeds/
+node_modules/
+*.sublime-project
+*.sublime-workspace
+.env
