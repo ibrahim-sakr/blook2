@@ -7,19 +7,22 @@ import { BlookRoutesModule } from './Blook.routes.module';
 /**
  * Our Modules
  */
-import { AuthModule }        from '../AuthModule/Auth.module';
+import { NotfoundModule }    from '../NotfoundModule/Notfound.module';
 import { DashboardModule }   from '../DashboardModule/Dashboard.module';
 import { GeoModule }         from '../GeoModule/Geo.module';
 import { RegionsModule }     from '../RegionsModule/Regions.module';
 import { PlacesModule }      from '../PlacesModule/Places.module';
 import { CategoriesModule }  from '../CategoriesModule/Categories.module';
-import { AttendenceModule }  from '../AttendenceModule/Attendence.module';
-import { MessagesModule }    from '../MessagesModule/Messages.module';
-import { PositionsModule }   from '../PositionsModule/Positions.module';
-import { SettingsModule }    from '../SettingsModule/Settings.module';
 import { TerminalsModule }   from '../TerminalsModule/Terminals.module';
+import { AttendenceModule }  from '../AttendenceModule/Attendence.module';
 import { TodolistsModule }   from '../TodolistsModule/Todolists.module';
-import { NotfoundModule }    from '../NotfoundModule/Notfound.module';
+import { PositionsModule }   from '../PositionsModule/Positions.module';
+import { TrashModule }       from '../TrashModule/Trash.module';
+import { HelpModule }        from '../HelpModule/Help.module';
+
+import { MessagesModule }    from '../MessagesModule/Messages.module';
+import { AuthModule }        from '../AuthModule/Auth.module';
+import { SettingsModule }    from '../SettingsModule/Settings.module';
 
 /**
  * Main Components that make Blook functional and start
@@ -44,6 +47,8 @@ import { HeaderComponent }    from './components/Header.component';
         SettingsModule,
         TerminalsModule,
         TodolistsModule,
+        TrashModule,
+        HelpModule,
         NotfoundModule,
         BlookRoutesModule
     ],

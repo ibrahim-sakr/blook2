@@ -35,7 +35,7 @@ li a {
 .root-sidebar > li > a {
     padding: 20px 15px;
 }
-.sub-menu > li > a {
+ul > li > ul > li > a {
     padding: 16px 15px;
 }
 li .box {
@@ -80,4 +80,3 @@ li.active .box {
     background: #5fc6cf;
     color: #fff;
 }
-

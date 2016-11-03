@@ -1,0 +1,20 @@
+:host {
+    top: -60px;
+    left: -210px;
+    right: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    background: transparent;
+}
+
+.messages {
+    display: block;
+    width: 400px;
+    position: absolute;
+    color: #666;
+    background: #fff;
+    right: -300px;
+    bottom: 0;
+    top: 0;
+}

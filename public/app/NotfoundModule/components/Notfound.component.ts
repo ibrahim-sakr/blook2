@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
     selector: 'page-not-found',
@@ -6,4 +7,10 @@ import { Component, ViewEncapsulation } from '@angular/core';
     styleUrls: ['app/NotfoundModule/css/page_not_found.css'],
     encapsulation: ViewEncapsulation.Emulated
 })
-export class NotfoundComponent { }
+export class NotfoundComponent {
+    constructor( private location: Location ){}
+
+    goBack(): void {
+        this.location.back();
+    }
+}
